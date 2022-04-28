@@ -1,6 +1,11 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
+// Resources to start with
+// https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+// https://www.youtube.com/watch?v=p06NNRq5NTU&app=desktop
+// https://randomnerdtutorials.com/esp32-http-get-post-arduino/#http-post
+
 // Replace with your network credentials
 const char* ssid     = "wifi_network_name";
 const char* password = "wifi_network_password";
