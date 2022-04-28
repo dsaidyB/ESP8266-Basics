@@ -6,7 +6,7 @@
 // https://www.youtube.com/watch?v=p06NNRq5NTU&app=desktop
 // https://randomnerdtutorials.com/esp32-http-get-post-arduino/#http-post
 
-// Replace with your network credentials
+// Replace with your network
 const char* ssid     = "wifi_network_name";
 const char* password = "wifi_network_password";
 const char* url = "web server";
@@ -41,7 +41,7 @@ void loop(){
   WiFiClientSecure client;
   HTTPClient http;
   
-  client.setInsecure(); //quote online: "the magic line, use with caution"
+  client.setInsecure(); //enables https connection
   client.connect(url, 443);
   
   http.begin(client, url);
