@@ -43,9 +43,9 @@ void loop(){
   HTTPClient http;
   
   client.setInsecure();
-  client.connect(url+"text file name or file in which you are storing LED status", 443);
+  client.connect(url+"/text file name or file in which you are storing LED status", 443);
   
-  http.begin(client, url+"text file or file in which you are storing LED status");
+  http.begin(client, url+"/text file or file in which you are storing LED status");
 
   String data;
   if (http.GET() > 0){    
@@ -75,9 +75,9 @@ void loop(){
   distValue = postVariable + String(distance);
   
   client.setInsecure();
-  client.connect(url + "distance sensor data processing php file", 443);
+  client.connect(url + "/distance sensor data processing php file", 443);
   
-  http.begin(client, url + "distance sensor data processing php file");
+  http.begin(client, url + "/distance sensor data processing php file");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");           
   int httpResponseCode = http.POST(distValue);
   http.end();
