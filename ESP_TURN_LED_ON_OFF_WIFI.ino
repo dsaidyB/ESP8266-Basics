@@ -9,7 +9,7 @@
 // Replace with your network
 const char* ssid     = "wifi_network_name";
 const char* password = "wifi_network_password";
-const char* url = "web server";
+const char* url = "web server"; // you can use the ESP to make your own web server or you can connect it to another web server for more functionality
 
 int ledPin = 4;
 
